@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 document.addEventListener('DOMContentLoaded', () => {
     const dropZone = document.getElementById('dropZone');
     const fileInput = document.getElementById('fileInput');
@@ -109,7 +108,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
-=======
 document.addEventListener('DOMContentLoaded', () => {
     const dropZone = document.getElementById('dropZone');
     const fileInput = document.getElementById('fileInput');
@@ -220,4 +218,3 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
->>>>>>> 6020f20 (first commit)
