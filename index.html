@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -42,3 +43,49 @@
     <script src="script.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إزالة الموسيقى من الفيديو</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>إزالة الموسيقى من الفيديو</h1>
+        
+        <div class="upload-container" id="dropZone">
+            <img src="upload-icon.svg" alt="رفع ملف">
+            <p>اسحب الفيديو هنا أو انقر للاختيار</p>
+            <input type="file" id="fileInput" accept="video/*" hidden>
+        </div>
+
+        <div class="controls" id="controls" style="display: none;">
+            <div class="slider-container">
+                <label for="isolation">مستوى عزل الموسيقى:</label>
+                <input type="range" id="isolation" min="0" max="100" value="100">
+            </div>
+            <button id="processBtn" class="primary-btn">معالجة الفيديو</button>
+        </div>
+
+        <div class="progress" id="progress" style="display: none;">
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+            <p class="progress-text">جاري المعالجة... <span id="timeRemaining"></span></p>
+        </div>
+
+        <div class="result" id="result" style="display: none;">
+            <video id="previewVideo" controls></video>
+            <div class="download-options">
+                <button id="downloadVideo" class="primary-btn">تحميل الفيديو</button>
+                <button id="downloadAudio" class="secondary-btn">تحميل الصوت فقط</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+>>>>>>> 6020f20 (first commit)
