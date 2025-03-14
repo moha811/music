@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
   "version": 2,
   "builds": [
@@ -7,37 +6,19 @@
       "use": "@vercel/node"
     }
   ],
-  "env": {
-    "CLOUDINARY_CLOUD_NAME": "@cloudinary-cloud-name",
-    "CLOUDINARY_API_KEY": "@cloudinary-api-key",
-    "CLOUDINARY_API_SECRET": "@cloudinary-api-secret"
-  },
   "routes": [
     {
-      "src": "/(.*)",
+      "src": "/api/(.*)",
       "dest": "server.js"
-    }
-  ]
-}
-=======
-{
-  "version": 2,
-  "builds": [
+    },
     {
-      "src": "server.js",
-      "use": "@vercel/node"
+      "src": "/(.*)",
+      "dest": "/"
     }
   ],
   "env": {
-    "CLOUDINARY_CLOUD_NAME": "@cloudinary-cloud-name",
-    "CLOUDINARY_API_KEY": "@cloudinary-api-key",
-    "CLOUDINARY_API_SECRET": "@cloudinary-api-secret"
+    "NODE_ENV": "production"
   },
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "server.js"
-    }
-  ]
+  "regions": ["cdg1"],
+  "public": true
 }
->>>>>>> 6020f20 (first commit)
